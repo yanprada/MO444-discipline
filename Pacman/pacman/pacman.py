@@ -218,6 +218,7 @@ class GameState:
     def isLose( self ):
         return self.data._lose
 
+
     def isWin( self ):
         return self.data._win
 
@@ -302,7 +303,7 @@ class ClassicGameRules:
         game.gameOver = True
 
     def lose( self, state, game ):
-        if not self.quiet: print("Pacman died! Score: %d" % state.data.score)
+        # if not self.quiet: print("Pacman died! Score: %d" % state.data.score)
         game.gameOver = True
 
     def getProgress(self, game):
